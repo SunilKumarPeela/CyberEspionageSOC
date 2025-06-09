@@ -39,6 +39,34 @@ FileCreationEvents
 ✅ Result: Malicious game file was found on the host.
 
 SHA256 for this file found to be :
+---
+## 🧪 Step 3: Analyze in Microsoft Defender XDR
+
+After retrieving the file hash, it was submitted to Microsoft Defender XDR.
+
+- ✅ **Secure Score**: `100`
+- ❌ **Verdict**: Malicious
+- 🔍 **Threat Actor Identified**: `Moonstone Sleet`
+
+---
+
+## 🌍 Step 4: Threat Actor Profile – Moonstone Sleet
+
+- 🏴 **Origin**: North Korea  
+- 🎯 **Targets**: Defense Industrial Base  
+- 🎭 **Motivation**: Espionage & Revenue Generation  
+- 🔁 **Overlaps With**: Diamond Sleet (Another DPRK threat actor)
+
+---
+
+## 📧 Step 5: Check for Phishing Emails
+
+**Domain Involved**: `detankwar.com`
+
+```kql
+Email
+| where link has "detankwar.com"
+```
 
 56554117d96d12bd3504ebef2a8f28e790dd1fe583c33ad58ccbf614313ead8c
 ---

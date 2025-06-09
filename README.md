@@ -23,3 +23,22 @@ An employee named **James Douglas** downloaded a game named **DeTankWar** after 
 ```kql
 Employees
 | where name has "James Douglas"
+```
+ Hostname: UB9I-DESKTOP
+
+ ---
+ ### 🔍 Step 2: Check for Game Installation
+
+We queried the system to see if the suspicious game `DeTankWar` was installed on the device belonging to James Douglas (`UB9I-DESKTOP`).
+
+```kql
+FileCreationEvents
+| where hostname == "UB9I-DESKTOP"
+| where filename has "DeTankWar"
+```
+✅ Result: Malicious game file was found on the host.
+
+SHA256 for this file found to be :
+
+56554117d96d12bd3504ebef2a8f28e790dd1fe583c33ad58ccbf614313ead8c
+---

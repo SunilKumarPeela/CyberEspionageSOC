@@ -3,6 +3,8 @@
 > A high-stakes cybersecurity case study involving North Korean APT group Moonstone Sleet, malicious gaming software, and the compromise of TitanShield's classified AI defense project.
 
 ---
+🎥 **[Watch Full Investigation Video (SOC2)](https://drive.google.com/file/d/19HkNb6Tv7oYkP5C6rBIEeBJiA6JQtG4s/view?usp=drive_link)**  
+> A realistic SOC simulation built with KQL, process analysis, phishing forensics, and file exfiltration tracking.
 
 ## 🧠 Background: Project Omega
 
